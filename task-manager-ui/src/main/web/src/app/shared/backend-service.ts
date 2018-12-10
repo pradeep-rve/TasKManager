@@ -13,7 +13,7 @@ export class BackendService {
      const headers = new HttpHeaders({
       'Content-Type': 'application/json'
     });
-    return this.httpClient.post(Config.API+'task-manager/viewTasks',
+    return this.httpClient.post(Config.API+'task/viewTasks',
       inputParam,
       {headers: headers});
   }
@@ -22,7 +22,7 @@ export class BackendService {
       const headers = new HttpHeaders({
       'Content-Type': 'application/json'
     });
-    return this.httpClient.post(Config.API+'/task-manager/updateTask',
+    return this.httpClient.post(Config.API+'task/updateTask',
       inputParam,
       {headers: headers});
   }
